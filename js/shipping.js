@@ -7,8 +7,8 @@ function billingFunction(){
     var bName = document.getElementById('billingName');
     var bZip = document.getElementById('billingZip');
     if (cb1.checked){
-    bName.value = sName.value;
-    bZip.value = sZip.value;
+        bName.value = sName.value;
+        bZip.value = sZip.value;
         
     }
     else{
@@ -16,7 +16,19 @@ function billingFunction(){
         bName.value = null;
     }
 }
+function verify(){
+    var cb1= document.getElementById('same');
+    var sName = document.getElementById('shippingName');
+    var sZip = document.getElementById('shippingZip');
+    var bName = document.getElementById('billingName');
+    var bZip = document.getElementById('billingZip');
+    if (bName.value == sName.value && bZip.value == sZip.value){
+        alert("Successful");
+    }else{
+        alert("Value is not the same as shipping Information");
+}
+}
 
 
     
-    
+
