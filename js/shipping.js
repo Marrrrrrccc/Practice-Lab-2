@@ -17,7 +17,6 @@ function billingFunction(){
     }
 }
 function verify(){
-    var cb1= document.getElementById('same');
     var sName = document.getElementById('shippingName');
     var sZip = document.getElementById('shippingZip');
     var bName = document.getElementById('billingName');
